@@ -3,62 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terence Tao Memes ($TERENCE) — The Smartest Meme on RobinHood</title>
-  <meta name="description" content="Vlad asked. The memes delivered. Terence Tao has officially entered the RobinHood meme universe. $TERENCE on RobinHood ETH." />
+  <title>Robinhood Cat ($Meow) — Wild Feline Adventures on RobinHood</title>
+  <meta name="description" content="Robinhood Cat Meow is a playful meme icon bringing feline energy, community vibes, and wild RobinHood adventures. $Meow on RobinHood ETH." />
 
-  <meta property="og:title" content="Terence Tao Memes — $TERENCE" />
-  <meta property="og:description" content="Vlad asked. The memes delivered. Terence Tao has officially entered the RobinHood meme universe." />
+  <meta property="og:title" content="Robinhood Cat — $Meow" />
+  <meta property="og:description" content="Robinhood Cat Meow is a playful meme icon bringing feline energy, community vibes, and wild RobinHood adventures." />
   <meta property="og:image" content="./banner.png" />
   <meta property="og:type" content="website" />
 
-  <link rel="icon" href="logo.jpg" /> 
+  <link rel="icon" href="logo.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            display: ['Bangers', 'cursive'],
-            sans: ['"Space Grotesk"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace'],
+            display: ['"Baloo 2"', 'cursive'],
+            sans: ['Nunito', 'sans-serif'],
           },
           colors: {
-            rh: {
-              green: '#00C805',
-              mint: '#21CE99',
-              dark: '#061a0e',
-              ink: '#0a2818',
-              neon: '#39FF14',
-              lime: '#7CFC00',
+            forest: {
+              deep: '#0a1a0f',
+              dark: '#122418',
+              moss: '#2d5a3d',
+              fern: '#4a7c59',
+              leaf: '#6b9f71',
+              bark: '#3d2b1f',
+              wood: '#5c4033',
+              amber: '#d4a853',
+              sun: '#e8c547',
+              mist: '#a8c5b0',
             },
           },
           animation: {
             'float': 'float 5s ease-in-out infinite',
-            'pulse-green': 'pulseGreen 2.5s ease-in-out infinite',
-            'drift': 'drift 20s linear infinite',
+            'pulse-amber': 'pulseAmber 2.5s ease-in-out infinite',
+            'drift': 'drift 22s linear infinite',
+            'sway': 'sway 6s ease-in-out infinite',
             'glow': 'glow 3s ease-in-out infinite',
+            'flicker': 'flicker 4s ease-in-out infinite',
           },
           keyframes: {
             float: {
               '0%, 100%': { transform: 'translateY(0) rotate(-2deg)' },
               '50%': { transform: 'translateY(-14px) rotate(2deg)' },
             },
-            pulseGreen: {
-              '0%, 100%': { boxShadow: '0 0 20px rgba(0,200,5,0.3)' },
-              '50%': { boxShadow: '0 0 40px rgba(0,200,5,0.6), 0 0 80px rgba(57,255,20,0.2)' },
+            pulseAmber: {
+              '0%, 100%': { boxShadow: '0 0 20px rgba(212,168,83,0.3)' },
+              '50%': { boxShadow: '0 0 40px rgba(212,168,83,0.55), 0 0 70px rgba(232,197,71,0.2)' },
             },
             drift: {
               '0%': { transform: 'translateY(100vh) rotate(0deg)', opacity: '0' },
-              '10%': { opacity: '0.6' },
-              '90%': { opacity: '0.6' },
+              '10%': { opacity: '0.7' },
+              '90%': { opacity: '0.7' },
               '100%': { transform: 'translateY(-10vh) rotate(360deg)', opacity: '0' },
             },
+            sway: {
+              '0%, 100%': { transform: 'rotate(-4deg)' },
+              '50%': { transform: 'rotate(4deg)' },
+            },
             glow: {
-              '0%, 100%': { filter: 'drop-shadow(0 0 20px rgba(0,200,5,0.4))' },
-              '50%': { filter: 'drop-shadow(0 0 40px rgba(57,255,20,0.8))' },
+              '0%, 100%': { filter: 'drop-shadow(0 0 18px rgba(212,168,83,0.35))' },
+              '50%': { filter: 'drop-shadow(0 0 32px rgba(232,197,71,0.65))' },
+            },
+            flicker: {
+              '0%, 100%': { opacity: '0.4' },
+              '50%': { opacity: '1' },
             },
           },
         },
@@ -68,46 +81,57 @@
   <style>
     html { scroll-behavior: smooth; }
 
-    .math-bg {
+    .forest-bg {
       position: fixed;
       inset: 0;
       z-index: 0;
       overflow: hidden;
       background:
-        radial-gradient(ellipse at 20% 0%, rgba(0, 200, 5, 0.18) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 100%, rgba(33, 206, 153, 0.12) 0%, transparent 45%),
-        linear-gradient(180deg, #041208 0%, #061a0e 40%, #0a2818 100%);
+        radial-gradient(ellipse at 15% 80%, rgba(45, 90, 61, 0.35) 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 20%, rgba(212, 168, 83, 0.08) 0%, transparent 40%),
+        radial-gradient(ellipse at 50% 100%, rgba(18, 36, 24, 0.9) 0%, transparent 60%),
+        linear-gradient(180deg, #071209 0%, #0a1a0f 35%, #122418 70%, #1a2e1a 100%);
     }
 
-    .math-symbol {
+    .tree-silhouette {
       position: absolute;
-      font-family: 'Times New Roman', serif;
-      font-style: italic;
-      color: rgba(57, 255, 20, 0.08);
+      bottom: 0;
+      width: 120px;
+      height: 280px;
+      background: linear-gradient(to top, #0a1a0f 0%, #1a3020 60%, transparent 100%);
+      clip-path: polygon(50% 0%, 65% 25%, 80% 20%, 70% 45%, 95% 40%, 75% 65%, 90% 80%, 50% 55%, 10% 80%, 25% 65%, 5% 40%, 30% 45%, 20% 20%, 35% 25%);
+      opacity: 0.25;
+      pointer-events: none;
+    }
+
+    .leaf-particle {
+      position: absolute;
       user-select: none;
       pointer-events: none;
-      animation: drift var(--dur, 25s) linear infinite;
+      animation: drift var(--dur, 22s) linear infinite;
       animation-delay: var(--delay, 0s);
+      opacity: 0.5;
     }
 
-    .grid-overlay {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      background-image:
-        linear-gradient(rgba(0, 200, 5, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 200, 5, 0.03) 1px, transparent 1px);
-      background-size: 48px 48px;
+    .firefly {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #e8c547;
+      box-shadow: 0 0 8px #e8c547, 0 0 16px rgba(232,197,71,0.5);
+      animation: flicker var(--dur, 4s) ease-in-out infinite;
+      animation-delay: var(--delay, 0s);
       pointer-events: none;
     }
 
-    .green-text {
-      background: linear-gradient(135deg, #00C805 0%, #39FF14 30%, #21CE99 60%, #7CFC00 100%);
+    .moss-text {
+      background: linear-gradient(135deg, #6b9f71 0%, #d4a853 35%, #e8c547 60%, #4a7c59 100%);
       background-size: 200% auto;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: shimmer 4s linear infinite;
+      animation: shimmer 5s linear infinite;
     }
 
     @keyframes shimmer {
@@ -115,81 +139,73 @@
       100% { background-position: 200% center; }
     }
 
-    .glass {
-      background: rgba(6, 26, 14, 0.85);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(0, 200, 5, 0.2);
+    .glass-wood {
+      background: rgba(18, 36, 24, 0.88);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(107, 159, 113, 0.25);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
     }
 
-    .chalkboard {
+    .wood-panel {
       background:
-        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.04) 0%, transparent 40%),
-        linear-gradient(145deg, #1a2e1f 0%, #0f1f14 50%, #162419 100%);
-      border: 3px solid rgba(0, 200, 5, 0.35);
+        repeating-linear-gradient(90deg, transparent, transparent 28px, rgba(61,43,31,0.15) 28px, rgba(61,43,31,0.15) 29px),
+        linear-gradient(160deg, #1e3424 0%, #152a1c 50%, #1a3020 100%);
+      border: 3px solid rgba(92, 64, 51, 0.6);
       box-shadow:
-        0 0 0 1px rgba(57, 255, 20, 0.1),
-        0 20px 60px rgba(0, 0, 0, 0.5),
-        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        0 0 0 1px rgba(107, 159, 113, 0.12),
+        0 20px 50px rgba(0, 0, 0, 0.45),
+        inset 0 2px 0 rgba(255,255,255,0.03);
     }
 
-    .chalk-formula {
-      font-family: 'Times New Roman', serif;
-      font-style: italic;
-      color: rgba(255, 255, 255, 0.12);
-      position: absolute;
-      pointer-events: none;
-      user-select: none;
-    }
-
-    .btn-green {
-      background: linear-gradient(135deg, #00C805, #21CE99, #00C805);
+    .btn-amber {
+      background: linear-gradient(135deg, #d4a853, #e8c547, #d4a853);
       background-size: 200% auto;
       transition: all 0.3s ease;
     }
-    .btn-green:hover {
+    .btn-amber:hover {
       background-position: right center;
       transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(0, 200, 5, 0.45);
+      box-shadow: 0 8px 28px rgba(212, 168, 83, 0.4);
     }
 
-    .btn-outline {
-      background: rgba(0, 200, 5, 0.08);
-      border: 2px solid rgba(0, 200, 5, 0.5);
+    .btn-moss {
+      background: rgba(74, 124, 89, 0.15);
+      border: 2px solid rgba(107, 159, 113, 0.5);
       transition: all 0.3s ease;
     }
-    .btn-outline:hover {
-      background: rgba(0, 200, 5, 0.18);
-      border-color: #39FF14;
+    .btn-moss:hover {
+      background: rgba(74, 124, 89, 0.3);
+      border-color: #6b9f71;
       transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(0, 200, 5, 0.25);
+      box-shadow: 0 8px 24px rgba(45, 90, 61, 0.35);
     }
 
-    .genius-ring {
+    .cat-ring {
       position: relative;
     }
-    .genius-ring::before {
+    .cat-ring::before {
       content: '';
       position: absolute;
       inset: -6px;
       border-radius: 50%;
-      background: conic-gradient(from 0deg, #00C805, #39FF14, #21CE99, #7CFC00, #00C805);
-      animation: spin 4s linear infinite;
+      background: conic-gradient(from 0deg, #4a7c59, #d4a853, #6b9f71, #e8c547, #4a7c59);
+      animation: spin 5s linear infinite;
       z-index: -1;
     }
-    .genius-ring::after {
+    .cat-ring::after {
       content: '';
       position: absolute;
       inset: -3px;
       border-radius: 50%;
-      background: #061a0e;
+      background: #0a1a0f;
       z-index: -1;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    .iq-badge {
-      background: linear-gradient(135deg, #00C805, #39FF14);
-      color: #041208;
-      font-family: Bangers, cursive;
+    .paw-badge {
+      background: linear-gradient(135deg, #4a7c59, #6b9f71);
+      color: #e8f5e9;
+      font-family: 'Baloo 2', cursive;
       letter-spacing: 1px;
       clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
     }
@@ -208,119 +224,199 @@
       display: flex;
       gap: 3rem;
       white-space: nowrap;
-      animation: marquee 30s linear infinite;
+      animation: marquee 28s linear infinite;
     }
     @keyframes marquee {
       from { transform: translateX(0); }
       to { transform: translateX(-50%); }
     }
 
-    .step-connector {
-      background: linear-gradient(90deg, transparent, rgba(0,200,5,0.4), transparent);
-      height: 2px;
+    .vine-border {
+      border-image: linear-gradient(135deg, #4a7c59, #d4a853, #6b9f71) 1;
     }
 
-    .vlad-quote::before {
-      content: '"';
-      font-family: Bangers, cursive;
-      font-size: 4rem;
-      color: #00C805;
-      line-height: 0;
-      vertical-align: -0.4em;
-      margin-right: 0.1em;
+    .paw-print {
+      position: absolute;
+      font-size: 1.2rem;
+      opacity: 0.08;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    html, body {
+      cursor: url('arrow.svg') 2 1, default;
+    }
+    a, button, [onclick] {
+      cursor: url('arrow.svg') 2 1, pointer;
+    }
+
+    .arrows-layer {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .flying-arrow {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+      filter: drop-shadow(0 0 6px rgba(232, 197, 71, 0.35));
+      animation: flyArrow var(--dur, 14s) linear infinite;
+      animation-delay: var(--delay, 0s);
+    }
+
+    .flying-arrow svg {
+      width: var(--size, 28px);
+      height: var(--size, 28px);
+    }
+
+    @keyframes flyArrow {
+      0% {
+        transform: translate(var(--x-start, -10vw), var(--y-start, 0)) rotate(var(--rot, 0deg)) scaleX(var(--flip, 1)) scale(0.8);
+        opacity: 0;
+      }
+      8% { opacity: var(--opacity, 0.55); }
+      92% { opacity: var(--opacity, 0.55); }
+      100% {
+        transform: translate(var(--x-end, 110vw), var(--y-end, 0)) rotate(var(--rot, 0deg)) scaleX(var(--flip, 1)) scale(1);
+        opacity: 0;
+      }
     }
   </style>
 </head>
 <body class="text-white font-sans overflow-x-hidden">
 
-  <!-- Animated math background -->
-  <div class="math-bg" aria-hidden="true">
-    <span class="math-symbol" style="left:5%;font-size:3rem;--dur:28s;--delay:0s">∫</span>
-    <span class="math-symbol" style="left:15%;font-size:2rem;--dur:22s;--delay:3s">Σ</span>
-    <span class="math-symbol" style="left:25%;font-size:4rem;--dur:35s;--delay:1s">π</span>
-    <span class="math-symbol" style="left:40%;font-size:2.5rem;--dur:26s;--delay:5s">∞</span>
-    <span class="math-symbol" style="left:55%;font-size:3.5rem;--dur:30s;--delay:2s">∂</span>
-    <span class="math-symbol" style="left:70%;font-size:2rem;--dur:24s;--delay:7s">√</span>
-    <span class="math-symbol" style="left:82%;font-size:4rem;--dur:32s;--delay:4s">λ</span>
-    <span class="math-symbol" style="left:92%;font-size:2.8rem;--dur:27s;--delay:6s">θ</span>
-    <span class="math-symbol" style="left:35%;font-size:2rem;--dur:20s;--delay:8s">Δ</span>
-    <span class="math-symbol" style="left:60%;font-size:3rem;--dur:29s;--delay:9s">∀</span>
-    <span class="math-symbol" style="left:8%;font-size:2.2rem;--dur:23s;--delay:10s">∃</span>
-    <span class="math-symbol" style="left:48%;font-size:3.2rem;--dur:31s;--delay:11s">Ω</span>
-  </div>
-  <div class="grid-overlay" aria-hidden="true"></div>
+  <!-- Forest background -->
+  <div class="forest-bg" aria-hidden="true">
+    <div class="tree-silhouette" style="left:2%;height:320px;opacity:0.2"></div>
+    <div class="tree-silhouette" style="left:18%;height:260px;opacity:0.15;transform:scaleX(-1)"></div>
+    <div class="tree-silhouette" style="right:5%;height:300px;opacity:0.22"></div>
+    <div class="tree-silhouette" style="right:22%;height:240px;opacity:0.12;transform:scaleX(-1)"></div>
 
-  <!-- Top accent bar -->
-  <div class="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-rh-green via-rh-neon to-rh-mint z-50"></div>
+    <span class="leaf-particle" style="left:8%;font-size:1.5rem;--dur:24s;--delay:0s">🍃</span>
+    <span class="leaf-particle" style="left:22%;font-size:1.2rem;--dur:19s;--delay:3s">🌿</span>
+    <span class="leaf-particle" style="left:38%;font-size:1.8rem;--dur:28s;--delay:1s">🍂</span>
+    <span class="leaf-particle" style="left:55%;font-size:1.3rem;--dur:21s;--delay:5s">🍃</span>
+    <span class="leaf-particle" style="left:72%;font-size:1.6rem;--dur:26s;--delay:2s">🌿</span>
+    <span class="leaf-particle" style="left:88%;font-size:1.4rem;--dur:23s;--delay:7s">🍂</span>
+    <span class="leaf-particle" style="left:45%;font-size:1.1rem;--dur:20s;--delay:9s">🍃</span>
+    <span class="leaf-particle" style="left:65%;font-size:1.7rem;--dur:27s;--delay:4s">🌿</span>
+
+    <span class="firefly" style="left:12%;top:30%;--dur:3.5s;--delay:0s"></span>
+    <span class="firefly" style="left:35%;top:55%;--dur:4.2s;--delay:1.5s"></span>
+    <span class="firefly" style="left:58%;top:25%;--dur:3.8s;--delay:0.8s"></span>
+    <span class="firefly" style="left:78%;top:45%;--dur:5s;--delay:2.2s"></span>
+    <span class="firefly" style="left:92%;top:65%;--dur:3.2s;--delay:3s"></span>
+    <span class="firefly" style="left:25%;top:70%;--dur:4.5s;--delay:1s"></span>
+  </div>
+
+  <!-- Flying arrows -->
+  <div class="arrows-layer" aria-hidden="true">
+    <div class="flying-arrow" style="top:8%;--dur:11s;--delay:0s;--rot:35deg;--size:22px;--x-start:-8vw;--y-start:0;--x-end:108vw;--y-end:30vh;--opacity:0.45">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#6b9f71" stroke="#e8c547" stroke-width="1.2"/></svg>
+    </div>
+    <div class="flying-arrow" style="top:22%;--dur:14s;--delay:2s;--rot:-25deg;--flip:-1;--size:32px;--x-start:108vw;--y-start:0;--x-end:-10vw;--y-end:-15vh;--opacity:0.5">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#4a7c59" stroke="#d4a853" stroke-width="1.2"/></svg>
+    </div>
+    <div class="flying-arrow" style="top:38%;--dur:9s;--delay:4s;--rot:55deg;--size:18px;--x-start:-10vw;--y-start:5vh;--x-end:110vw;--y-end:-20vh;--opacity:0.4">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#6b9f71" stroke="#e8c547" stroke-width="1.2"/></svg>
+    </div>
+    <div class="flying-arrow" style="top:52%;--dur:16s;--delay:1s;--rot:-40deg;--flip:-1;--size:26px;--x-start:110vw;--y-start:-5vh;--x-end:-12vw;--y-end:25vh;--opacity:0.48">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#4a7c59" stroke="#d4a853" stroke-width="1.2"/></svg>
+    </div>
+    <div class="flying-arrow" style="top:65%;--dur:12s;--delay:6s;--rot:20deg;--size:24px;--x-start:-12vw;--y-start:-10vh;--x-end:112vw;--y-end:10vh;--opacity:0.42">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#6b9f71" stroke="#e8c547" stroke-width="1.2"/></svg>
+    </div>
+    <div class="flying-arrow" style="top:78%;--dur:13s;--delay:3s;--rot:-15deg;--flip:-1;--size:30px;--x-start:112vw;--y-start:8vh;--x-end:-8vw;--y-end:-12vh;--opacity:0.5">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#4a7c59" stroke="#d4a853" stroke-width="1.2"/></svg>
+    </div>
+    <div class="flying-arrow" style="top:15%;--dur:10s;--delay:8s;--rot:70deg;--size:20px;--x-start:-6vw;--y-start:20vh;--x-end:106vw;--y-end:-30vh;--opacity:0.38">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#6b9f71" stroke="#e8c547" stroke-width="1.2"/></svg>
+    </div>
+    <div class="flying-arrow" style="top:45%;--dur:15s;--delay:5s;--rot:-60deg;--flip:-1;--size:34px;--x-start:106vw;--y-start:-15vh;--x-end:-14vw;--y-end:35vh;--opacity:0.52">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#4a7c59" stroke="#d4a853" stroke-width="1.2"/></svg>
+    </div>
+    <div class="flying-arrow" style="top:88%;--dur:11s;--delay:7s;--rot:10deg;--size:22px;--x-start:-14vw;--y-start:0;--x-end:114vw;--y-end:-8vh;--opacity:0.44">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#6b9f71" stroke="#e8c547" stroke-width="1.2"/></svg>
+    </div>
+    <div class="flying-arrow" style="top:30%;--dur:18s;--delay:9s;--rot:-30deg;--flip:-1;--size:28px;--x-start:114vw;--y-start:12vh;--x-end:-6vw;--y-end:-25vh;--opacity:0.46">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#4a7c59" stroke="#d4a853" stroke-width="1.2"/></svg>
+    </div>
+  </div>
+
+  <!-- Top vine accent -->
+  <div class="fixed top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-forest-moss via-forest-amber to-forest-fern z-50"></div>
 
   <!-- Navbar -->
-  <nav class="relative z-40 glass sticky top-0">
+  <nav class="relative z-40 glass-wood sticky top-0">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3 group">
-        <div class="genius-ring">
-          <img src="logo.jpg" alt="Terence Tao Memes Logo" class="w-12 h-12 rounded-full object-cover animate-glow group-hover:scale-110 transition-transform duration-300" />
+        <div class="cat-ring">
+          <img src="logo.png" alt="Robinhood Cat Logo" class="w-12 h-12 rounded-full object-cover animate-glow group-hover:scale-110 transition-transform duration-300" />
         </div>
         <div>
-          <span class="font-display text-2xl tracking-wider green-text">TERENCE TAO MEMES</span>
-          <span class="block text-xs text-rh-mint/80 font-semibold tracking-widest font-mono">$TERENCE</span>
+          <span class="font-display text-2xl tracking-wide moss-text">ROBINHOOD CAT</span>
+          <span class="block text-xs text-forest-mist/80 font-bold tracking-widest">$Meow</span>
         </div>
       </a>
-      <div class="hidden md:flex items-center gap-6 text-sm font-semibold">
-        <a href="#about" class="text-white/70 hover:text-rh-neon transition-colors">About</a>
-        <a href="#genius" class="text-white/70 hover:text-rh-neon transition-colors">The Genius</a>
-        <a href="#how-to-buy" class="text-white/70 hover:text-rh-neon transition-colors">How to Buy</a>
-        <a href="#chart" class="text-white/70 hover:text-rh-neon transition-colors">Chart</a>
-        <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=0x9D1FFA873949E4fB1426E52A1B5E6B59e92E4FE2" target="_blank" rel="noopener noreferrer" class="btn-green text-rh-dark font-bold px-5 py-2 rounded-full text-sm">Buy Now</a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-bold">
+        <a href="#about" class="text-white/70 hover:text-forest-sun transition-colors">About</a>
+        <a href="#the-cat" class="text-white/70 hover:text-forest-sun transition-colors">The Cat</a>
+        <a href="#how-to-buy" class="text-white/70 hover:text-forest-sun transition-colors">How to Buy</a>
+        <a href="#chart" class="text-white/70 hover:text-forest-sun transition-colors">Chart</a>
+        <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener noreferrer" class="btn-amber text-forest-deep font-bold px-5 py-2 rounded-full text-sm">Buy Now</a>
       </div>
       <div class="flex items-center gap-3">
-        <a href="https://t.me/TerenceTao_rh" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-200" aria-label="Telegram">
+        <a href="https://t.me/MeowCat_rh" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-200" aria-label="Telegram">
           <img src="tg.png" alt="Telegram" class="w-9 h-9 rounded-lg" />
         </a>
-        <a href="https://x.com/TerenceTao_rh" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-200" aria-label="Twitter / X">
+        <a href="https://x.com/MeowCat_rh" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-200" aria-label="Twitter / X">
           <img src="x.png" alt="X (Twitter)" class="w-9 h-9 rounded-lg" />
         </a>
       </div>
     </div>
-  </nav> 
+  </nav>
 
   <!-- Marquee ticker -->
-  <div class="relative z-10 bg-rh-green/10 border-y border-rh-green/20 py-2 overflow-hidden">
-    <div class="marquee-track font-mono text-sm text-rh-mint/90 font-semibold">
-      <span>🧠 IQ: OFF THE CHARTS</span>
-      <span>∫ TERENCE = ∞ GAINS</span>
-      <span>🟢 ROBINHOOD ETH</span>
-      <span>VLAD ASKED. MEMES DELIVERED.</span>
-      <span>📐 THE SMARTEST MEME COIN</span>
-      <span>$TERENCE TO THE MOON</span>
-      <span>🧮 PROOF: BUY NOW Q.E.D.</span>
-      <span>🧠 IQ: OFF THE CHARTS</span>
-      <span>∫ TERENCE = ∞ GAINS</span>
-      <span>🟢 ROBINHOOD ETH</span>
-      <span>VLAD ASKED. MEMES DELIVERED.</span>
-      <span>📐 THE SMARTEST MEME COIN</span>
-      <span>$TERENCE TO THE MOON</span>
-      <span>🧮 PROOF: BUY NOW Q.E.D.</span>
+  <div class="relative z-10 bg-forest-moss/15 border-y border-forest-fern/25 py-2 overflow-hidden">
+    <div class="marquee-track text-sm text-forest-mist font-bold">
+      <span>🐱 MEOW MEOW MEOW</span>
+      <span>🌲 FOREST VIBES ONLY</span>
+      <span>🐾 WILD ROBINHOOD ADVENTURES</span>
+      <span>🍃 FELINE ENERGY ACTIVATED</span>
+      <span>💚 COMMUNITY CAT CREW</span>
+      <span>🌿 $MEOW IN THE WOODS</span>
+      <span>🦊 PURR YOUR WAY TO THE MOON</span>
+      <span>🐱 MEOW MEOW MEOW</span>
+      <span>🌲 FOREST VIBES ONLY</span>
+      <span>🐾 WILD ROBINHOOD ADVENTURES</span>
+      <span>🍃 FELINE ENERGY ACTIVATED</span>
+      <span>💚 COMMUNITY CAT CREW</span>
+      <span>🌿 $MEOW IN THE WOODS</span>
+      <span>🦊 PURR YOUR WAY TO THE MOON</span>
     </div>
   </div>
 
   <!-- Hero -->
   <section class="relative z-10 pt-8 pb-12">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="relative rounded-2xl overflow-hidden border border-rh-green/30 shadow-2xl shadow-rh-green/15">
-        <img src="banner.png" alt="Terence Tao Memes Banner" class="w-full h-auto object-cover" />
-        <div class="absolute inset-0 bg-gradient-to-t from-rh-dark via-rh-dark/30 to-transparent"></div>
+      <div class="relative rounded-2xl overflow-hidden border border-forest-fern/35 shadow-2xl shadow-forest-moss/20">
+        <img src="banner.png" alt="Robinhood Cat Banner" class="w-full h-auto object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-forest-deep via-forest-deep/40 to-transparent"></div>
         <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10">
           <div class="flex flex-col md:flex-row items-center md:items-end justify-between gap-6">
             <div class="text-center md:text-left">
-              <div class="inline-block iq-badge px-4 py-1 text-sm mb-3 tracking-wider">IQ ∞</div>
-              <h1 class="font-display text-5xl md:text-7xl tracking-wider green-text leading-none mb-2">TERENCE TAO MEMES</h1>
-              <p class="text-xl md:text-2xl text-white/85 font-semibold">$TERENCE — The Smartest Meme on RobinHood 🧠</p>
+              <div class="inline-block paw-badge px-4 py-1 text-sm mb-3 tracking-wider">🐾 MEOW</div>
+              <h1 class="font-display text-5xl md:text-7xl tracking-wide moss-text leading-none mb-2">ROBINHOOD CAT</h1>
+              <p class="text-xl md:text-2xl text-white/85 font-bold">$Meow — Feline Energy in the Wild Forest 🐱</p>
             </div>
             <div class="flex flex-wrap gap-3 justify-center">
-              <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=0x9D1FFA873949E4fB1426E52A1B5E6B59e92E4FE2" target="_blank" rel="noopener noreferrer" class="btn-green text-rh-dark font-bold px-8 py-3 rounded-full text-lg animate-pulse-green">
-                🚀 Buy Now
+              <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener noreferrer" class="btn-amber text-forest-deep font-bold px-8 py-3 rounded-full text-lg animate-pulse-amber">
+                🐾 Buy Now
               </a>
-              <a href="https://dexscreener.com/robinhood/0x9D1FFA873949E4fB1426E52A1B5E6B59e92E4FE2" target="_blank" rel="noopener noreferrer" class="btn-outline text-white font-bold px-8 py-3 rounded-full text-lg">
+              <a href="https://dexscreener.com/robinhood/TBA" target="_blank" rel="noopener noreferrer" class="btn-moss text-white font-bold px-8 py-3 rounded-full text-lg">
                 📈 Chart
               </a>
             </div>
@@ -333,95 +429,94 @@
   <!-- Contract Address -->
   <section class="relative z-10 pb-12">
     <div class="max-w-3xl mx-auto px-4">
-      <div class="glass rounded-2xl p-6 text-center">
-        <p class="text-rh-neon font-semibold text-sm uppercase tracking-widest mb-3 font-mono">Contract Address (CA)</p>
+      <div class="glass-wood rounded-2xl p-6 text-center">
+        <p class="text-forest-sun font-bold text-sm uppercase tracking-widest mb-3">Contract Address (CA)</p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-          <code id="ca-address" class="bg-rh-ink/90 text-rh-neon font-mono text-sm md:text-base px-4 py-3 rounded-xl border border-rh-green/25 break-all select-all">
-            0x9D1FFA873949E4fB1426E52A1B5E6B59e92E4FE2
+          <code id="ca-address" class="bg-forest-dark/90 text-forest-sun font-mono text-sm md:text-base px-4 py-3 rounded-xl border border-forest-fern/30 break-all select-all">
+            TBA
           </code>
-          <button id="copy-btn" onclick="copyCA()" class="btn-green text-rh-dark font-bold px-6 py-3 rounded-xl flex items-center gap-2 whitespace-nowrap">
+          <button id="copy-btn" onclick="copyCA()" class="btn-amber text-forest-deep font-bold px-6 py-3 rounded-xl flex items-center gap-2 whitespace-nowrap">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
             </svg>
             Copy CA
           </button>
         </div>
-        <p id="copy-toast" class="copied-toast text-rh-neon text-sm mt-3 font-semibold">✅ Copied to clipboard!</p>
+        <p id="copy-toast" class="copied-toast text-forest-leaf text-sm mt-3 font-bold">✅ Copied to clipboard!</p>
       </div>
     </div>
   </section>
 
-  <!-- About / Vlad Quote -->
+  <!-- About -->
   <section id="about" class="relative z-10 py-16">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="glass rounded-3xl p-8 md:p-12 border border-rh-green/25 relative overflow-hidden">
-        <div class="absolute top-4 right-6 text-8xl text-rh-green/5 font-serif italic pointer-events-none select-none">∫</div>
-        <div class="absolute bottom-4 left-6 text-6xl text-rh-green/5 font-serif italic pointer-events-none select-none">Σ</div>
+      <div class="wood-panel rounded-3xl p-8 md:p-12 relative overflow-hidden">
+        <span class="paw-print top-6 right-10 text-6xl">🐾</span>
+        <span class="paw-print bottom-8 left-8 text-5xl">🐾</span>
+        <span class="paw-print top-1/2 right-1/4 text-4xl">🐾</span>
         <div class="relative text-center max-w-3xl mx-auto">
-          <p class="text-rh-mint text-sm uppercase tracking-[0.3em] font-semibold mb-4">The Origin Story</p>
-          <h2 class="font-display text-3xl md:text-5xl tracking-wide green-text mb-6 leading-tight vlad-quote">
-            Vlad asked. The memes delivered. Terence Tao has officially entered the RobinHood meme universe.
+          <p class="text-forest-mist text-sm uppercase tracking-[0.3em] font-bold mb-4">Welcome to the Woods</p>
+          <h2 class="font-display text-3xl md:text-5xl tracking-wide moss-text mb-6 leading-tight">
+            Robinhood Cat Meow is a playful meme icon bringing feline energy, community vibes, and wild RobinHood adventures.
           </h2>
-          <p class="text-white/70 text-lg leading-relaxed mb-4">
-            When Robinhood CEO <strong class="text-rh-neon">Vlad Tenev</strong> tweeted <em>"The world needs more Terence Tao memes"</em> — the community answered. <strong class="text-rh-green">$TERENCE</strong> was born: the only meme coin backed by pure mathematical genius.
+          <p class="text-white/75 text-lg leading-relaxed mb-4">
+            Deep in the digital forest, a legend was born. <strong class="text-forest-sun">Robinhood Cat</strong> prowls the RobinHood chain with unmatched swagger — part meme, part mascot, all chaos. One meow at a time, the community grows wilder.
           </p>
           <p class="text-white/50 text-base leading-relaxed">
-            No presale. No team allocation. 100% community driven. Built on RobinHood ETH. The terrace has been mathematically proven to moon. Q.E.D. 🧮
+            No presale. No team tokens. 100% community driven. Built on RobinHood ETH. Grab your $Meow and join the wildest cat crew in crypto. 🌲🐱
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- The Genius — Famous Man Section -->
-  <section id="genius" class="relative z-10 py-16">
+  <!-- The Cat — Mascot Section -->
+  <section id="the-cat" class="relative z-10 py-16">
     <div class="max-w-6xl mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <!-- Creative portrait frame -->
         <div class="flex justify-center relative">
-          <div class="chalkboard rounded-3xl p-8 md:p-10 relative w-full max-w-md">
-            <span class="chalk-formula top-4 left-6 text-lg">∫₀^∞ e^(-x²) dx = √π/2</span>
-            <span class="chalk-formula top-16 right-4 text-sm">lim (1+1/n)ⁿ = e</span>
-            <span class="chalk-formula bottom-20 left-4 text-base">Σ 1/n² = π²/6</span>
-            <span class="chalk-formula bottom-8 right-8 text-lg">∀x ∈ ℝ...</span>
+          <div class="wood-panel rounded-3xl p-8 md:p-10 relative w-full max-w-md">
+            <span class="absolute top-4 left-6 text-2xl animate-sway">🌿</span>
+            <span class="absolute top-10 right-6 text-xl opacity-60">🍄</span>
+            <span class="absolute bottom-16 left-4 text-lg opacity-50">🦉</span>
+            <span class="absolute bottom-6 right-8 text-2xl animate-sway" style="animation-delay:1s">🌲</span>
             <div class="relative flex flex-col items-center pt-6">
-              <div class="genius-ring mb-6">
-                <img src="logo.jpg" alt="Terence Tao" class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover animate-float border-4 border-rh-green/30" />
+              <div class="cat-ring mb-6">
+                <img src="logo.png" alt="Robinhood Cat" class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover animate-float border-4 border-forest-fern/40" />
               </div>
-              <div class="iq-badge px-6 py-2 text-lg tracking-wider mb-3">GENIUS LEVEL: MAX</div>
-              <h3 class="font-display text-3xl green-text tracking-wide text-center">TERENCE TAO</h3>
-              <p class="text-rh-mint/80 text-sm font-mono mt-1">Fields Medalist · UCLA Professor</p>
+              <div class="paw-badge px-6 py-2 text-lg tracking-wider mb-3">MEOW LEVEL: MAX</div>
+              <h3 class="font-display text-3xl moss-text tracking-wide text-center">ROBINHOOD CAT</h3>
+              <p class="text-forest-mist/80 text-sm font-bold mt-1">Forest Guardian · Meme Legend</p>
             </div>
           </div>
-          <!-- Floating badges -->
-          <div class="absolute -top-3 -right-2 md:right-8 glass rounded-xl px-3 py-2 text-xs font-mono text-rh-neon border border-rh-green/30 rotate-6 shadow-lg">
-            🧠 IQ ∞
+          <div class="absolute -top-3 -right-2 md:right-8 glass-wood rounded-xl px-3 py-2 text-xs font-bold text-forest-sun border border-forest-fern/30 rotate-6 shadow-lg">
+            😺 Purr Power
           </div>
-          <div class="absolute -bottom-2 -left-2 md:left-4 glass rounded-xl px-3 py-2 text-xs font-mono text-rh-neon border border-rh-green/30 -rotate-3 shadow-lg">
-            📐 π = 3.14159...
+          <div class="absolute -bottom-2 -left-2 md:left-4 glass-wood rounded-xl px-3 py-2 text-xs font-bold text-forest-sun border border-forest-fern/30 -rotate-3 shadow-lg">
+            🐾 Meow × ∞
           </div>
         </div>
 
         <div>
-          <h2 class="font-display text-4xl md:text-5xl tracking-wider green-text mb-6">THE SMARTEST MAN<br/>MEETS THE DUMBEST MARKET</h2>
+          <h2 class="font-display text-4xl md:text-5xl tracking-wide moss-text mb-6">THE WILDEST CAT<br/>IN THE FOREST</h2>
           <p class="text-white/80 text-lg leading-relaxed mb-4">
-            <strong class="text-rh-green">Terence Tao</strong> is widely considered the greatest living mathematician. Now he's the face of the most intellectually superior meme coin on RobinHood ETH.
+            <strong class="text-forest-leaf">Robinhood Cat</strong> isn't just a meme — it's a movement. Feline energy meets degen spirit in the heart of the RobinHood woods, where every holder is part of the pride.
           </p>
           <p class="text-white/60 text-base leading-relaxed mb-8">
-            From terrace puns to chalkboard proofs — the meme writes itself. TERRACE + TAO = $TERENCE. The math checks out. The vibes are immaculate. The chart? That's for you to prove.
+            From mossy trails to moonlit charts, $Meow brings the vibes. Community-first. Forest-powered. Adventure-ready. The cat's out of the bag — and it's not going back in.
           </p>
           <div class="grid grid-cols-3 gap-4">
-            <div class="glass rounded-xl p-4 text-center hover:border-rh-green/50 transition-colors">
-              <div class="text-2xl mb-1">🧮</div>
-              <div class="text-rh-neon font-bold text-sm">Big Brain</div>
+            <div class="glass-wood rounded-xl p-4 text-center hover:border-forest-fern/50 transition-colors">
+              <div class="text-2xl mb-1">🐱</div>
+              <div class="text-forest-sun font-bold text-sm">Feline Energy</div>
             </div>
-            <div class="glass rounded-xl p-4 text-center hover:border-rh-green/50 transition-colors">
-              <div class="text-2xl mb-1">🟢</div>
-              <div class="text-rh-neon font-bold text-sm">RobinHood ETH</div>
+            <div class="glass-wood rounded-xl p-4 text-center hover:border-forest-fern/50 transition-colors">
+              <div class="text-2xl mb-1">🌲</div>
+              <div class="text-forest-sun font-bold text-sm">Forest Vibes</div>
             </div>
-            <div class="glass rounded-xl p-4 text-center hover:border-rh-green/50 transition-colors">
-              <div class="text-2xl mb-1">🏠</div>
-              <div class="text-rh-neon font-bold text-sm">Terrace Memes</div>
+            <div class="glass-wood rounded-xl p-4 text-center hover:border-forest-fern/50 transition-colors">
+              <div class="text-2xl mb-1">🐾</div>
+              <div class="text-forest-sun font-bold text-sm">Wild Adventures</div>
             </div>
           </div>
         </div>
@@ -433,51 +528,51 @@
   <section id="how-to-buy" class="relative z-10 py-16">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-12">
-        <h2 class="font-display text-4xl md:text-5xl tracking-wider green-text mb-3">HOW TO BUY</h2>
-        <p class="text-white/60 text-lg">Acquire $TERENCE in 4 proven steps using RobinHood ETH</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-wide moss-text mb-3">HOW TO BUY</h2>
+        <p class="text-white/60 text-lg">Snag your $Meow in 4 easy steps using RobinHood ETH</p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="glass rounded-2xl p-6 relative group hover:border-rh-green/50 transition-all duration-300 hover:-translate-y-1">
-          <div class="absolute -top-4 left-6 bg-rh-green text-rh-dark font-display text-2xl w-10 h-10 rounded-full flex items-center justify-center border-2 border-rh-neon shadow-lg shadow-rh-green/30">1</div>
+        <div class="glass-wood rounded-2xl p-6 relative group hover:border-forest-fern/50 transition-all duration-300 hover:-translate-y-1">
+          <div class="absolute -top-4 left-6 bg-forest-fern text-white font-display text-2xl w-10 h-10 rounded-full flex items-center justify-center border-2 border-forest-sun shadow-lg shadow-forest-moss/30">1</div>
           <div class="pt-4">
             <div class="text-3xl mb-3">📱</div>
-            <h3 class="font-bold text-lg text-rh-neon mb-2">Download Robinhood</h3>
-            <p class="text-white/60 text-sm leading-relaxed">Install the Robinhood app and create your account. Complete identity verification to unlock crypto trading features.</p>
+            <h3 class="font-bold text-lg text-forest-sun mb-2">Download Robinhood</h3>
+            <p class="text-white/60 text-sm leading-relaxed">Install the Robinhood app and create your account. Complete identity verification to unlock crypto trading.</p>
           </div>
         </div>
 
-        <div class="glass rounded-2xl p-6 relative group hover:border-rh-green/50 transition-all duration-300 hover:-translate-y-1">
-          <div class="absolute -top-4 left-6 bg-rh-green text-rh-dark font-display text-2xl w-10 h-10 rounded-full flex items-center justify-center border-2 border-rh-neon shadow-lg shadow-rh-green/30">2</div>
+        <div class="glass-wood rounded-2xl p-6 relative group hover:border-forest-fern/50 transition-all duration-300 hover:-translate-y-1">
+          <div class="absolute -top-4 left-6 bg-forest-fern text-white font-display text-2xl w-10 h-10 rounded-full flex items-center justify-center border-2 border-forest-sun shadow-lg shadow-forest-moss/30">2</div>
           <div class="pt-4">
             <div class="text-3xl mb-3">💰</div>
-            <h3 class="font-bold text-lg text-rh-neon mb-2">Buy ETH on Robinhood</h3>
-            <p class="text-white/60 text-sm leading-relaxed">Deposit funds into your Robinhood account and purchase Ethereum (ETH). This becomes your fuel for the swap.</p>
+            <h3 class="font-bold text-lg text-forest-sun mb-2">Buy ETH on Robinhood</h3>
+            <p class="text-white/60 text-sm leading-relaxed">Deposit funds into your Robinhood account and purchase Ethereum (ETH). This fuels your forest adventure.</p>
           </div>
         </div>
 
-        <div class="glass rounded-2xl p-6 relative group hover:border-rh-green/50 transition-all duration-300 hover:-translate-y-1">
-          <div class="absolute -top-4 left-6 bg-rh-green text-rh-dark font-display text-2xl w-10 h-10 rounded-full flex items-center justify-center border-2 border-rh-neon shadow-lg shadow-rh-green/30">3</div>
+        <div class="glass-wood rounded-2xl p-6 relative group hover:border-forest-fern/50 transition-all duration-300 hover:-translate-y-1">
+          <div class="absolute -top-4 left-6 bg-forest-fern text-white font-display text-2xl w-10 h-10 rounded-full flex items-center justify-center border-2 border-forest-sun shadow-lg shadow-forest-moss/30">3</div>
           <div class="pt-4">
             <div class="text-3xl mb-3">🔗</div>
-            <h3 class="font-bold text-lg text-rh-neon mb-2">Bridge to RobinHood ETH</h3>
-            <p class="text-white/60 text-sm leading-relaxed">Withdraw ETH to a RobinHood ETH-compatible wallet. Use a bridge service to convert ETH to RobinHood ETH on the RobinHood network.</p>
+            <h3 class="font-bold text-lg text-forest-sun mb-2">Bridge to RobinHood ETH</h3>
+            <p class="text-white/60 text-sm leading-relaxed">Withdraw ETH to a RobinHood ETH-compatible wallet. Use a bridge to convert ETH to RobinHood ETH on the RobinHood network.</p>
           </div>
         </div>
 
-        <div class="glass rounded-2xl p-6 relative group hover:border-rh-green/50 transition-all duration-300 hover:-translate-y-1">
-          <div class="absolute -top-4 left-6 bg-rh-green text-rh-dark font-display text-2xl w-10 h-10 rounded-full flex items-center justify-center border-2 border-rh-neon shadow-lg shadow-rh-green/30">4</div>
+        <div class="glass-wood rounded-2xl p-6 relative group hover:border-forest-fern/50 transition-all duration-300 hover:-translate-y-1">
+          <div class="absolute -top-4 left-6 bg-forest-fern text-white font-display text-2xl w-10 h-10 rounded-full flex items-center justify-center border-2 border-forest-sun shadow-lg shadow-forest-moss/30">4</div>
           <div class="pt-4">
-            <div class="text-3xl mb-3">🧠</div>
-            <h3 class="font-bold text-lg text-rh-neon mb-2">Swap for $TERENCE</h3>
-            <p class="text-white/60 text-sm leading-relaxed">Open Uniswap on RobinHood chain, connect your wallet, and swap RobinHood ETH for $TERENCE. Welcome to the smartest bag in crypto.</p>
+            <div class="text-3xl mb-3">🐱</div>
+            <h3 class="font-bold text-lg text-forest-sun mb-2">Swap for $Meow</h3>
+            <p class="text-white/60 text-sm leading-relaxed">Open Uniswap on RobinHood chain, connect your wallet, and swap RobinHood ETH for $Meow. Welcome to the cat crew!</p>
           </div>
         </div>
       </div>
 
       <div class="text-center mt-10">
-        <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=0x9D1FFA873949E4fB1426E52A1B5E6B59e92E4FE2" target="_blank" rel="noopener noreferrer" class="btn-green inline-block text-rh-dark font-bold px-10 py-4 rounded-full text-xl animate-pulse-green">
-          🧮 Buy $TERENCE Now
+        <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener noreferrer" class="btn-amber inline-block text-forest-deep font-bold px-10 py-4 rounded-full text-xl animate-pulse-amber">
+          🐾 Buy $Meow Now
         </a>
       </div>
     </div>
@@ -487,13 +582,13 @@
   <section id="chart" class="relative z-10 py-16">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-8">
-        <h2 class="font-display text-4xl md:text-5xl tracking-wider green-text mb-3">LIVE CHART</h2>
-        <p class="text-white/60 text-lg">Track $TERENCE price action — the proof is in the chart</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-wide moss-text mb-3">LIVE CHART</h2>
+        <p class="text-white/60 text-lg">Track $Meow through the forest — watch the adventure unfold</p>
       </div>
-      <div class="glass rounded-2xl overflow-hidden border border-rh-green/25">
+      <div class="glass-wood rounded-2xl overflow-hidden border border-forest-fern/30">
         <iframe
-          src="https://dexscreener.com/robinhood/0x9D1FFA873949E4fB1426E52A1B5E6B59e92E4FE2?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15"
-          title="$TERENCE Dexscreener Chart"
+          src="https://dexscreener.com/robinhood/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15"
+          title="$Meow Dexscreener Chart"
           class="w-full"
           style="height: 500px; border: none;"
           allow="clipboard-write"
@@ -501,7 +596,7 @@
         ></iframe>
       </div>
       <div class="text-center mt-6">
-        <a href="https://dexscreener.com/robinhood/0x9D1FFA873949E4fB1426E52A1B5E6B59e92E4FE2" target="_blank" rel="noopener noreferrer" class="btn-outline inline-block text-white font-bold px-8 py-3 rounded-full text-lg">
+        <a href="https://dexscreener.com/robinhood/TBA" target="_blank" rel="noopener noreferrer" class="btn-moss inline-block text-white font-bold px-8 py-3 rounded-full text-lg">
           📈 Open Full Chart on Dexscreener
         </a>
       </div>
@@ -511,26 +606,26 @@
   <!-- CTA -->
   <section class="relative z-10 py-16">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <div class="chalkboard rounded-3xl p-10 md:p-14 relative overflow-hidden">
-        <span class="chalk-formula top-6 left-8 text-2xl">f(x) → ∞</span>
-        <span class="chalk-formula bottom-6 right-8 text-xl">Q.E.D. 🚀</span>
+      <div class="wood-panel rounded-3xl p-10 md:p-14 relative overflow-hidden">
+        <span class="absolute top-6 left-8 text-3xl opacity-30 animate-sway">🌲</span>
+        <span class="absolute bottom-6 right-8 text-2xl opacity-30">🐾</span>
         <div class="relative">
-          <div class="genius-ring w-24 h-24 mx-auto mb-6">
-            <img src="logo.jpg" alt="Terence Tao Memes" class="w-24 h-24 rounded-full object-cover animate-float" />
+          <div class="cat-ring w-24 h-24 mx-auto mb-6">
+            <img src="logo.png" alt="Robinhood Cat" class="w-24 h-24 rounded-full object-cover animate-float" />
           </div>
-          <h2 class="font-display text-4xl md:text-6xl tracking-wider green-text mb-4">JOIN THE PROOF</h2>
-          <p class="text-white/70 text-lg mb-2 max-w-xl mx-auto vlad-quote text-xl md:text-2xl font-display tracking-wide text-rh-mint">
-            Vlad asked. The memes delivered.
+          <h2 class="font-display text-4xl md:text-6xl tracking-wide moss-text mb-4">JOIN THE PRIDE</h2>
+          <p class="text-forest-mist text-lg mb-2 max-w-xl mx-auto font-display text-xl md:text-2xl tracking-wide">
+            Feline energy. Community vibes. Wild adventures.
           </p>
-          <p class="text-white/50 text-base mb-8 max-w-lg mx-auto">Don't be the control group. Be part of the equation. $TERENCE awaits.</p>
+          <p class="text-white/50 text-base mb-8 max-w-lg mx-auto">The forest is calling. Don't let the cat nap without you. $Meow awaits.</p>
           <div class="flex flex-wrap gap-4 justify-center">
-            <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=0x9D1FFA873949E4fB1426E52A1B5E6B59e92E4FE2" target="_blank" rel="noopener noreferrer" class="btn-green text-rh-dark font-bold px-10 py-4 rounded-full text-xl">
-              🚀 Buy Now
+            <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener noreferrer" class="btn-amber text-forest-deep font-bold px-10 py-4 rounded-full text-xl">
+              🐾 Buy Now
             </a>
-            <a href="https://t.me/TerenceTao_rh" target="_blank" rel="noopener noreferrer" class="glass text-white font-bold px-8 py-4 rounded-full text-lg hover:border-rh-green/50 transition-all flex items-center gap-2">
+            <a href="https://t.me/MeowCat_rh" target="_blank" rel="noopener noreferrer" class="glass-wood text-white font-bold px-8 py-4 rounded-full text-lg hover:border-forest-fern/50 transition-all flex items-center gap-2">
               <img src="tg.png" alt="" class="w-6 h-6" /> Telegram
             </a>
-            <a href="https://x.com/TerenceTao_rh" target="_blank" rel="noopener noreferrer" class="glass text-white font-bold px-8 py-4 rounded-full text-lg hover:border-rh-green/50 transition-all flex items-center gap-2">
+            <a href="https://x.com/MeowCat_rh" target="_blank" rel="noopener noreferrer" class="glass-wood text-white font-bold px-8 py-4 rounded-full text-lg hover:border-forest-fern/50 transition-all flex items-center gap-2">
               <img src="x.png" alt="" class="w-6 h-6" /> Follow on X
             </a>
           </div>
@@ -540,32 +635,32 @@
   </section>
 
   <!-- Footer -->
-  <footer class="relative z-10 border-t border-rh-green/15 py-8">
+  <footer class="relative z-10 border-t border-forest-fern/20 py-8">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="h-1 bg-gradient-to-r from-transparent via-rh-green to-transparent rounded-full mb-8 opacity-60"></div>
+      <div class="h-1 bg-gradient-to-r from-transparent via-forest-amber to-transparent rounded-full mb-8 opacity-50"></div>
       <div class="flex flex-col md:flex-row items-center justify-between gap-4">
         <div class="flex items-center gap-3">
-          <img src="logo.jpg" alt="Terence Tao Memes" class="w-10 h-10 rounded-full object-cover border border-rh-green/30" />
+          <img src="logo.png" alt="Robinhood Cat" class="w-10 h-10 rounded-full object-cover border border-forest-fern/35" />
           <div>
-            <span class="font-display text-xl tracking-wider text-rh-green">TERENCE TAO MEMES</span>
-            <span class="block text-xs text-white/40">$TERENCE — Not financial advice. DYOR. 🧮</span>
+            <span class="font-display text-xl tracking-wide text-forest-leaf">ROBINHOOD CAT</span>
+            <span class="block text-xs text-white/40">$Meow — Not financial advice. DYOR. 🐱</span>
           </div>
         </div>
         <div class="flex items-center gap-4">
-          <a href="https://t.me/TerenceTao_rh" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity hover:scale-110 transform duration-200">
+          <a href="https://t.me/MeowCat_rh" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity hover:scale-110 transform duration-200">
             <img src="tg.png" alt="Telegram" class="w-8 h-8" />
           </a>
-          <a href="https://x.com/TerenceTao_rh" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity hover:scale-110 transform duration-200">
+          <a href="https://x.com/MeowCat_rh" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity hover:scale-110 transform duration-200">
             <img src="x.png" alt="X" class="w-8 h-8" />
           </a>
         </div>
-        <p class="text-white/30 text-xs text-center md:text-right">© 2026 Terence Tao Memes. All rights reserved.<br/>Vlad asked. The memes delivered. 🟢</p>
+        <p class="text-white/30 text-xs text-center md:text-right">© 2026 Robinhood Cat. All rights reserved.<br/>Meow your way through the forest. 🌲🐾</p>
       </div>
     </div>
   </footer>
 
   <script>
-    const CA = '0x9D1FFA873949E4fB1426E52A1B5E6B59e92E4FE2';
+    const CA = 'TBA';
 
     function copyCA() {
       navigator.clipboard.writeText(CA).then(() => {
