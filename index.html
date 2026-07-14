@@ -267,9 +267,11 @@
       animation-delay: var(--delay, 0s);
     }
 
-    .flying-arrow svg {
-      width: var(--size, 28px);
-      height: var(--size, 28px);
+    .flying-arrow img {
+      width: var(--size, 48px);
+      height: auto;
+      display: block;
+      object-fit: contain;
     }
 
     @keyframes flyArrow {
@@ -314,35 +316,35 @@
 
   <!-- Flying arrows -->
   <div class="arrows-layer" aria-hidden="true">
-    <div class="flying-arrow" style="top:8%;--dur:11s;--delay:0s;--rot:35deg;--size:22px;--x-start:-8vw;--y-start:0;--x-end:108vw;--y-end:30vh;--opacity:0.45">
-      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#6b9f71" stroke="#e8c547" stroke-width="1.2"/></svg>
+    <div class="flying-arrow" style="top:8%;--dur:11s;--delay:0s;--rot:35deg;--size:56px;--x-start:-8vw;--y-start:0;--x-end:108vw;--y-end:30vh;--opacity:0.7">
+      <img src="arrow.png" alt="" />
     </div>
-    <div class="flying-arrow" style="top:22%;--dur:14s;--delay:2s;--rot:-25deg;--flip:-1;--size:32px;--x-start:108vw;--y-start:0;--x-end:-10vw;--y-end:-15vh;--opacity:0.5">
-      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#4a7c59" stroke="#d4a853" stroke-width="1.2"/></svg>
+    <div class="flying-arrow" style="top:22%;--dur:14s;--delay:2s;--rot:-25deg;--flip:-1;--size:72px;--x-start:108vw;--y-start:0;--x-end:-10vw;--y-end:-15vh;--opacity:0.75">
+      <img src="arrow.png" alt="" />
     </div>
-    <div class="flying-arrow" style="top:38%;--dur:9s;--delay:4s;--rot:55deg;--size:18px;--x-start:-10vw;--y-start:5vh;--x-end:110vw;--y-end:-20vh;--opacity:0.4">
-      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#6b9f71" stroke="#e8c547" stroke-width="1.2"/></svg>
+    <div class="flying-arrow" style="top:38%;--dur:9s;--delay:4s;--rot:55deg;--size:48px;--x-start:-10vw;--y-start:5vh;--x-end:110vw;--y-end:-20vh;--opacity:0.65">
+      <img src="arrow.png" alt="" />
     </div>
-    <div class="flying-arrow" style="top:52%;--dur:16s;--delay:1s;--rot:-40deg;--flip:-1;--size:26px;--x-start:110vw;--y-start:-5vh;--x-end:-12vw;--y-end:25vh;--opacity:0.48">
-      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#4a7c59" stroke="#d4a853" stroke-width="1.2"/></svg>
+    <div class="flying-arrow" style="top:52%;--dur:16s;--delay:1s;--rot:-40deg;--flip:-1;--size:64px;--x-start:110vw;--y-start:-5vh;--x-end:-12vw;--y-end:25vh;--opacity:0.72">
+      <img src="arrow.png" alt="" />
     </div>
-    <div class="flying-arrow" style="top:65%;--dur:12s;--delay:6s;--rot:20deg;--size:24px;--x-start:-12vw;--y-start:-10vh;--x-end:112vw;--y-end:10vh;--opacity:0.42">
-      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#6b9f71" stroke="#e8c547" stroke-width="1.2"/></svg>
+    <div class="flying-arrow" style="top:65%;--dur:12s;--delay:6s;--rot:20deg;--size:60px;--x-start:-12vw;--y-start:-10vh;--x-end:112vw;--y-end:10vh;--opacity:0.68">
+      <img src="arrow.png" alt="" />
     </div>
-    <div class="flying-arrow" style="top:78%;--dur:13s;--delay:3s;--rot:-15deg;--flip:-1;--size:30px;--x-start:112vw;--y-start:8vh;--x-end:-8vw;--y-end:-12vh;--opacity:0.5">
-      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#4a7c59" stroke="#d4a853" stroke-width="1.2"/></svg>
+    <div class="flying-arrow" style="top:78%;--dur:13s;--delay:3s;--rot:-15deg;--flip:-1;--size:68px;--x-start:112vw;--y-start:8vh;--x-end:-8vw;--y-end:-12vh;--opacity:0.75">
+      <img src="arrow.png" alt="" />
     </div>
-    <div class="flying-arrow" style="top:15%;--dur:10s;--delay:8s;--rot:70deg;--size:20px;--x-start:-6vw;--y-start:20vh;--x-end:106vw;--y-end:-30vh;--opacity:0.38">
-      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#6b9f71" stroke="#e8c547" stroke-width="1.2"/></svg>
+    <div class="flying-arrow" style="top:15%;--dur:10s;--delay:8s;--rot:70deg;--size:52px;--x-start:-6vw;--y-start:20vh;--x-end:106vw;--y-end:-30vh;--opacity:0.6">
+      <img src="arrow.png" alt="" />
     </div>
-    <div class="flying-arrow" style="top:45%;--dur:15s;--delay:5s;--rot:-60deg;--flip:-1;--size:34px;--x-start:106vw;--y-start:-15vh;--x-end:-14vw;--y-end:35vh;--opacity:0.52">
-      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#4a7c59" stroke="#d4a853" stroke-width="1.2"/></svg>
+    <div class="flying-arrow" style="top:45%;--dur:15s;--delay:5s;--rot:-60deg;--flip:-1;--size:80px;--x-start:106vw;--y-start:-15vh;--x-end:-14vw;--y-end:35vh;--opacity:0.78">
+      <img src="arrow.png" alt="" />
     </div>
-    <div class="flying-arrow" style="top:88%;--dur:11s;--delay:7s;--rot:10deg;--size:22px;--x-start:-14vw;--y-start:0;--x-end:114vw;--y-end:-8vh;--opacity:0.44">
-      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#6b9f71" stroke="#e8c547" stroke-width="1.2"/></svg>
+    <div class="flying-arrow" style="top:88%;--dur:11s;--delay:7s;--rot:10deg;--size:56px;--x-start:-14vw;--y-start:0;--x-end:114vw;--y-end:-8vh;--opacity:0.7">
+      <img src="arrow.png" alt="" />
     </div>
-    <div class="flying-arrow" style="top:30%;--dur:18s;--delay:9s;--rot:-30deg;--flip:-1;--size:28px;--x-start:114vw;--y-start:12vh;--x-end:-6vw;--y-end:-25vh;--opacity:0.46">
-      <svg viewBox="0 0 32 32" fill="none"><path d="M2 2 L2 26 L10 18 L14 30 L18 28 L13 16 L28 16 Z" fill="#4a7c59" stroke="#d4a853" stroke-width="1.2"/></svg>
+    <div class="flying-arrow" style="top:30%;--dur:18s;--delay:9s;--rot:-30deg;--flip:-1;--size:64px;--x-start:114vw;--y-start:12vh;--x-end:-6vw;--y-end:-25vh;--opacity:0.72">
+      <img src="arrow.png" alt="" />
     </div>
   </div>
 
