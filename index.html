@@ -86,42 +86,25 @@
       inset: 0;
       z-index: 0;
       overflow: hidden;
+      background: #0a1a0f;
+    }
+
+    .bg-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .bg-overlay {
+      position: absolute;
+      inset: 0;
       background:
-        radial-gradient(ellipse at 15% 80%, rgba(45, 90, 61, 0.35) 0%, transparent 50%),
-        radial-gradient(ellipse at 85% 20%, rgba(212, 168, 83, 0.08) 0%, transparent 40%),
-        radial-gradient(ellipse at 50% 100%, rgba(18, 36, 24, 0.9) 0%, transparent 60%),
-        linear-gradient(180deg, #071209 0%, #0a1a0f 35%, #122418 70%, #1a2e1a 100%);
-    }
-
-    .tree-silhouette {
-      position: absolute;
-      bottom: 0;
-      width: 120px;
-      height: 280px;
-      background: linear-gradient(to top, #0a1a0f 0%, #1a3020 60%, transparent 100%);
-      clip-path: polygon(50% 0%, 65% 25%, 80% 20%, 70% 45%, 95% 40%, 75% 65%, 90% 80%, 50% 55%, 10% 80%, 25% 65%, 5% 40%, 30% 45%, 20% 20%, 35% 25%);
-      opacity: 0.25;
-      pointer-events: none;
-    }
-
-    .leaf-particle {
-      position: absolute;
-      user-select: none;
-      pointer-events: none;
-      animation: drift var(--dur, 22s) linear infinite;
-      animation-delay: var(--delay, 0s);
-      opacity: 0.5;
-    }
-
-    .firefly {
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: #e8c547;
-      box-shadow: 0 0 8px #e8c547, 0 0 16px rgba(232,197,71,0.5);
-      animation: flicker var(--dur, 4s) ease-in-out infinite;
-      animation-delay: var(--delay, 0s);
+        radial-gradient(ellipse at 15% 80%, rgba(45, 90, 61, 0.25) 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 20%, rgba(212, 168, 83, 0.06) 0%, transparent 40%),
+        linear-gradient(180deg, rgba(7, 18, 9, 0.45) 0%, rgba(10, 26, 15, 0.55) 50%, rgba(10, 26, 15, 0.7) 100%);
       pointer-events: none;
     }
 
@@ -290,28 +273,12 @@
 </head>
 <body class="text-white font-sans overflow-x-hidden">
 
-  <!-- Forest background -->
+  <!-- Video background -->
   <div class="forest-bg" aria-hidden="true">
-    <div class="tree-silhouette" style="left:2%;height:320px;opacity:0.2"></div>
-    <div class="tree-silhouette" style="left:18%;height:260px;opacity:0.15;transform:scaleX(-1)"></div>
-    <div class="tree-silhouette" style="right:5%;height:300px;opacity:0.22"></div>
-    <div class="tree-silhouette" style="right:22%;height:240px;opacity:0.12;transform:scaleX(-1)"></div>
-
-    <span class="leaf-particle" style="left:8%;font-size:1.5rem;--dur:24s;--delay:0s">🍃</span>
-    <span class="leaf-particle" style="left:22%;font-size:1.2rem;--dur:19s;--delay:3s">🌿</span>
-    <span class="leaf-particle" style="left:38%;font-size:1.8rem;--dur:28s;--delay:1s">🍂</span>
-    <span class="leaf-particle" style="left:55%;font-size:1.3rem;--dur:21s;--delay:5s">🍃</span>
-    <span class="leaf-particle" style="left:72%;font-size:1.6rem;--dur:26s;--delay:2s">🌿</span>
-    <span class="leaf-particle" style="left:88%;font-size:1.4rem;--dur:23s;--delay:7s">🍂</span>
-    <span class="leaf-particle" style="left:45%;font-size:1.1rem;--dur:20s;--delay:9s">🍃</span>
-    <span class="leaf-particle" style="left:65%;font-size:1.7rem;--dur:27s;--delay:4s">🌿</span>
-
-    <span class="firefly" style="left:12%;top:30%;--dur:3.5s;--delay:0s"></span>
-    <span class="firefly" style="left:35%;top:55%;--dur:4.2s;--delay:1.5s"></span>
-    <span class="firefly" style="left:58%;top:25%;--dur:3.8s;--delay:0.8s"></span>
-    <span class="firefly" style="left:78%;top:45%;--dur:5s;--delay:2.2s"></span>
-    <span class="firefly" style="left:92%;top:65%;--dur:3.2s;--delay:3s"></span>
-    <span class="firefly" style="left:25%;top:70%;--dur:4.5s;--delay:1s"></span>
+    <video class="bg-video" autoplay muted loop playsinline preload="auto">
+      <source src="bg.mp4" type="video/mp4" />
+    </video>
+    <div class="bg-overlay"></div>
   </div>
 
   <!-- Flying arrows -->
@@ -368,13 +335,13 @@
         <a href="#the-cat" class="text-white/70 hover:text-forest-sun transition-colors">The Cat</a>
         <a href="#how-to-buy" class="text-white/70 hover:text-forest-sun transition-colors">How to Buy</a>
         <a href="#chart" class="text-white/70 hover:text-forest-sun transition-colors">Chart</a>
-        <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=0xfe4c571896d6dcca3c97763d8d4667a085793f89" target="_blank" rel="noopener noreferrer" class="btn-amber text-forest-deep font-bold px-5 py-2 rounded-full text-sm">Buy Now</a>
+        <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener noreferrer" class="btn-amber text-forest-deep font-bold px-5 py-2 rounded-full text-sm">Buy Now</a>
       </div>
       <div class="flex items-center gap-3">
-        <a href="https://t.me/MeowCat_rh" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-200" aria-label="Telegram">
+        <a href="https://t.me/robinmeowcat" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-200" aria-label="Telegram">
           <img src="tg.png" alt="Telegram" class="w-9 h-9 rounded-lg" />
         </a>
-        <a href="https://x.com/MeowCat_rh" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-200" aria-label="Twitter / X">
+        <a href="https://x.com/robinmeowcat" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-200" aria-label="Twitter / X">
           <img src="x.png" alt="X (Twitter)" class="w-9 h-9 rounded-lg" />
         </a>
       </div>
@@ -415,10 +382,10 @@
               <p class="text-xl md:text-2xl text-white/85 font-bold">$Meow — Feline Energy in the Wild Forest 🐱</p>
             </div>
             <div class="flex flex-wrap gap-3 justify-center">
-              <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=0xfe4c571896d6dcca3c97763d8d4667a085793f89" target="_blank" rel="noopener noreferrer" class="btn-amber text-forest-deep font-bold px-8 py-3 rounded-full text-lg animate-pulse-amber">
+              <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener noreferrer" class="btn-amber text-forest-deep font-bold px-8 py-3 rounded-full text-lg animate-pulse-amber">
                 🐾 Buy Now
               </a>
-              <a href="https://dexscreener.com/robinhood/0xfe4c571896d6dcca3c97763d8d4667a085793f89" target="_blank" rel="noopener noreferrer" class="btn-moss text-white font-bold px-8 py-3 rounded-full text-lg">
+              <a href="https://dexscreener.com/robinhood/TBA" target="_blank" rel="noopener noreferrer" class="btn-moss text-white font-bold px-8 py-3 rounded-full text-lg">
                 📈 Chart
               </a>
             </div>
@@ -435,7 +402,7 @@
         <p class="text-forest-sun font-bold text-sm uppercase tracking-widest mb-3">Contract Address (CA)</p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
           <code id="ca-address" class="bg-forest-dark/90 text-forest-sun font-mono text-sm md:text-base px-4 py-3 rounded-xl border border-forest-fern/30 break-all select-all">
-            0xfe4c571896d6dcca3c97763d8d4667a085793f89
+            TBA
           </code>
           <button id="copy-btn" onclick="copyCA()" class="btn-amber text-forest-deep font-bold px-6 py-3 rounded-xl flex items-center gap-2 whitespace-nowrap">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -573,7 +540,7 @@
       </div>
 
       <div class="text-center mt-10">
-        <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=0xfe4c571896d6dcca3c97763d8d4667a085793f89" target="_blank" rel="noopener noreferrer" class="btn-amber inline-block text-forest-deep font-bold px-10 py-4 rounded-full text-xl animate-pulse-amber">
+        <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener noreferrer" class="btn-amber inline-block text-forest-deep font-bold px-10 py-4 rounded-full text-xl animate-pulse-amber">
           🐾 Buy $Meow Now
         </a>
       </div>
@@ -589,7 +556,7 @@
       </div>
       <div class="glass-wood rounded-2xl overflow-hidden border border-forest-fern/30">
         <iframe
-          src="https://dexscreener.com/robinhood/0xfe4c571896d6dcca3c97763d8d4667a085793f89?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15"
+          src="https://dexscreener.com/robinhood/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15"
           title="$Meow Dexscreener Chart"
           class="w-full"
           style="height: 500px; border: none;"
@@ -598,7 +565,7 @@
         ></iframe>
       </div>
       <div class="text-center mt-6">
-        <a href="https://dexscreener.com/robinhood/0xfe4c571896d6dcca3c97763d8d4667a085793f89" target="_blank" rel="noopener noreferrer" class="btn-moss inline-block text-white font-bold px-8 py-3 rounded-full text-lg">
+        <a href="https://dexscreener.com/robinhood/TBA" target="_blank" rel="noopener noreferrer" class="btn-moss inline-block text-white font-bold px-8 py-3 rounded-full text-lg">
           📈 Open Full Chart on Dexscreener
         </a>
       </div>
@@ -621,13 +588,13 @@
           </p>
           <p class="text-white/50 text-base mb-8 max-w-lg mx-auto">The forest is calling. Don't let the cat nap without you. $Meow awaits.</p>
           <div class="flex flex-wrap gap-4 justify-center">
-            <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=0xfe4c571896d6dcca3c97763d8d4667a085793f89" target="_blank" rel="noopener noreferrer" class="btn-amber text-forest-deep font-bold px-10 py-4 rounded-full text-xl">
+            <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener noreferrer" class="btn-amber text-forest-deep font-bold px-10 py-4 rounded-full text-xl">
               🐾 Buy Now
             </a>
-            <a href="https://t.me/MeowCat_rh" target="_blank" rel="noopener noreferrer" class="glass-wood text-white font-bold px-8 py-4 rounded-full text-lg hover:border-forest-fern/50 transition-all flex items-center gap-2">
+            <a href="https://t.me/robinmeowcat" target="_blank" rel="noopener noreferrer" class="glass-wood text-white font-bold px-8 py-4 rounded-full text-lg hover:border-forest-fern/50 transition-all flex items-center gap-2">
               <img src="tg.png" alt="" class="w-6 h-6" /> Telegram
             </a>
-            <a href="https://x.com/MeowCat_rh" target="_blank" rel="noopener noreferrer" class="glass-wood text-white font-bold px-8 py-4 rounded-full text-lg hover:border-forest-fern/50 transition-all flex items-center gap-2">
+            <a href="https://x.com/robinmeowcat" target="_blank" rel="noopener noreferrer" class="glass-wood text-white font-bold px-8 py-4 rounded-full text-lg hover:border-forest-fern/50 transition-all flex items-center gap-2">
               <img src="x.png" alt="" class="w-6 h-6" /> Follow on X
             </a>
           </div>
@@ -649,10 +616,10 @@
           </div>
         </div>
         <div class="flex items-center gap-4">
-          <a href="https://t.me/MeowCat_rh" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity hover:scale-110 transform duration-200">
+          <a href="https://t.me/robinmeowcat" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity hover:scale-110 transform duration-200">
             <img src="tg.png" alt="Telegram" class="w-8 h-8" />
           </a>
-          <a href="https://x.com/MeowCat_rh" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity hover:scale-110 transform duration-200">
+          <a href="https://x.com/robinmeowcat" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity hover:scale-110 transform duration-200">
             <img src="x.png" alt="X" class="w-8 h-8" />
           </a>
         </div>
@@ -662,7 +629,7 @@
   </footer>
 
   <script>
-    const CA = '0xfe4c571896d6dcca3c97763d8d4667a085793f89';
+    const CA = 'TBA';
 
     function copyCA() {
       navigator.clipboard.writeText(CA).then(() => {
@@ -684,6 +651,13 @@
         if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
+
+    const bgVideo = document.querySelector('.bg-video');
+    if (bgVideo) {
+      bgVideo.play().catch(() => {
+        document.addEventListener('click', () => bgVideo.play(), { once: true });
+      });
+    }
   </script>
 </body>
 </html>
